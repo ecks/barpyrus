@@ -25,7 +25,7 @@ class Lemonbar(EventInput):
         if geometry:
             (x,y,w,h) = geometry
             command += [ '-g', "%dx%d%+d%+d" % (w,h,x,y)  ]
-        command += '-a 100 -d -u 2'.split(' ')
+        command += '-a 100 -u 2'.split(' ')
         command += [ '-B', background  ]
         command += [ '-F', foreground  ]
         command += [ '-f', font  ]
